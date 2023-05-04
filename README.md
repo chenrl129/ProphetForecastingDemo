@@ -63,6 +63,11 @@ generate_pdf_report(forecast.tail(30)[['ds', 'yhat', 'yhat_lower', 'yhat_upper']
 
 The project is organized into the following sections:
 
-1. **Data Loading and Preprocessing**: LOAD DATA
+1. **Data Loading and Preprocessing**: ```LOAD DATA
 data = pd.read_csv("synthetic_infusion_pump_utilization.csv")
+PREPARE DATA
+daily_data = data.groupby('date').mean().reset_index()
+daily_data = daily_data[['date', 'utilization_rate']]
+daily_data.columns = ['ds', 'y']```
+
 
