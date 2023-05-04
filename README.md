@@ -1,4 +1,4 @@
-# Equipment Utilization Forecast
+# Prophet Equipment Utilization Forecast
 
 ## About the Data 📊
 
