@@ -16,7 +16,7 @@
 2. Load the historical data from a CSV file.
 3. Preprocess the data for the Prophet model.
 4. Fit the Prophet model to the data.
-5. Generate forecasts for the next 365 days.
+5. Generate forecasts for the next 90 days.
 6. Visualize the forecast using Matplotlib and Plotly.
 
 ## Prerequisites 🛠️

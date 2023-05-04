@@ -19,8 +19,8 @@ daily_data.columns = ['ds', 'y']
 model = Prophet()
 model.fit(daily_data)
 
-# Generate forecasts for the next 365 days
-future = model.make_future_dataframe(periods=365)
+# Generate forecasts for the next 90 days
+future = model.make_future_dataframe(periods=90)
 forecast = model.predict(future)
 forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail()
 
