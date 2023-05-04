@@ -58,3 +58,14 @@ Example:
 pdf_filename = "equipment_forecast_report.pdf"
 generate_pdf_report(forecast.tail(30)[['ds', 'yhat', 'yhat_lower', 'yhat_upper']], pdf_filename)
 ```
+
+## Code Overview 📖
+
+The project is organized into the following sections:
+
+1. **Data Loading and Preprocessing**: Read the CSV file, group data by date, and compute the average utilization rate per day. Prepare the data for the Prophet model by selecting and renaming the required columns.
+2. **Model Building**: Instantiate and fit the Prophet model using the preprocessed data.
+3. **Forecast Generation**: Generate equipment utilization forecasts for the next 90 days.
+4. **Visualization**: Create visualizations of the forecast using both Matplotlib and Plotly libraries. This includes an overall forecast plot and a components plot.
+5. **Report Generation**: Create a PDF report of the equipment utilization forecast using the `reportlab` library. The `generate_pdf_report` function takes the forecast data and output file name as parameters and generates a PDF report containing a table of predicted utilization rates along with their lower and upper bounds.
+
