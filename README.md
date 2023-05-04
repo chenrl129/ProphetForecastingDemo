@@ -1,6 +1,9 @@
 # Prophet Equipment Utilization Forecast
 
-## About the Data 📊
+## Overview 📚
+This project aims to predict future equipment utilization rates in a healthcare setting using the Prophet forecasting model. It uses a synthetic dataset containing equipment utilization rates and demonstrates how to preprocess the data, fit the model, generate forecasts, visualize the results, and create a PDF report.
+
+## Data Description 📊
 
 - This project uses a synthetic dataset containing equipment utilization rates.
 - The dataset is in CSV format, named `synthetic_infusion_pump_utilization.csv`.
@@ -10,7 +13,7 @@
 | `date`            | The date when the utilization rate was recorded (YYYY-MM-DD). |
 | `utilization_rate` | The equipment utilization rate, ranging from 0 to 1. |
 
-## Project Workflow 📚
+## Project Workflow 🚀
 
 1. Import the required libraries.
 2. Load the historical data from a CSV file.
@@ -34,7 +37,7 @@ You can install them using the following command:
 pip install pandas fbprophet matplotlib plotly reportlab
 ```
 
-## Usage 🚀
+## Usage Instructions 📚
 
 1. Clone the repository.
 2. Make sure the dataset is in the same directory as the script.
