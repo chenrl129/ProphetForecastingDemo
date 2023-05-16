@@ -21,7 +21,7 @@ daily_data.columns = ['ds', 'y']
 model = Prophet()
 model.fit(daily_data)
 
-# FORECAST
+# FORECAST --- Adjust periods parameter for how many days into the future to forecast
 future = model.make_future_dataframe(periods=90)
 forecast = model.predict(future)
 
