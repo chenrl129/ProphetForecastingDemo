@@ -69,3 +69,4 @@ The project is organized into the following sections:
 4. **Visualization**: Create visualizations of the forecast using both Matplotlib and Plotly libraries. This includes an overall forecast plot and a components plot.
 5. **Report Generation**: Create a PDF report of the equipment utilization forecast using the `reportlab` library. The `generate_pdf_report` function takes the forecast data and output file name as parameters and generates a PDF report containing a table of predicted utilization rates along with their lower and upper bounds.
 
+An example forecast can be found here: https://chart-studio.plotly.com/create/?fid=rchen%3A7#/
